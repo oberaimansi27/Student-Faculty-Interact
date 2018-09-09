@@ -1,0 +1,26 @@
+body{
+	background-image:url(img/141.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment: fixed;
+}
+
+.c1{
+	width:2100px;
+	height:2400px;
+	background-color:#3B170B;
+	border-radius:50px;
+	opacity:0.6;
+	position:absolute;
+	top:600px;
+	left:1700px;
+
+}
+.c2{
+	opacity:1;
+	position:absolute;
+	top:400px;
+	left:300px;
+	font-size:80px;
+	color:white;
+}

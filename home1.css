@@ -1,0 +1,204 @@
+
+body{
+	margin:0;
+	padding:0;
+	background-color:#F8F9F9;
+	z-index:0;
+}
+.slide1,.slide2,.slide3,.slide4
+{
+	position:absolute;
+	width:100%;
+	height:100%;
+	z-index:10;
+	font-size:400px;
+
+}
+.slide1{
+	background-image:url(homeimg/19.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	animation: fade1 12s infinite;
+	
+}
+
+.slide2{
+	background-image:url(homeimg/11.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	animation: fade2 12s infinite;
+ 
+}
+.slide3{
+	background-image:url(homeimg/13.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	animation: fade3 12s infinite;
+	 
+}
+
+.slide4{
+	background-image:url(homeimg/106.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	animation: fade4 12s infinite;
+ 
+}
+
+@keyframes fade1{
+	0%
+	{
+		opacity: 1;
+	}
+	25%
+	{
+		opacity: 0;
+	}50%
+	{
+		opacity: 0;
+	}75%
+	{
+		opacity: 0;
+	}
+	100%
+	{
+		opacity: 1;
+	}
+}
+@keyframes fade2{
+	0%
+	{
+		opacity: 0;
+	}
+	25%
+	{
+		opacity: 1;
+	}50%
+	{
+		opacity: 0;
+	}75%
+	{
+		opacity: 0;
+	}
+	100%
+	{
+		opacity: 0;
+	}
+}
+@keyframes fade3{
+	0%
+	{
+		opacity: 0;
+	}
+	25%
+	{
+		opacity: 0;
+	}50%
+	{
+		opacity: 1;
+	}75%
+	{
+		opacity: 0;
+	}
+	100%
+	{
+		opacity: 0;
+	}
+}
+@keyframes fade4{
+	0%
+	{
+		opacity: 0;
+	}
+	25%
+	{
+		opacity: 0;
+	}50%
+	{
+		opacity: 0;
+	}75%
+	{
+		opacity: 1;
+	}
+	100%
+	{
+		opacity:0;
+	}
+}
+
+.dropbtn {
+	width:370px;
+	height:120px;
+    background-color: white;
+    color: black;
+    font-size: 60px;
+    border: none;
+	font-family:"georgian";
+}
+
+.dropdown {
+    position: absolute;
+    display: inline-block;
+	z-index:100;
+	right:0px;
+	width:370px;
+	
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	width:370px;
+	
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+	opacity:0.7;
+	font-size: 80px;
+	font-family:"georgian";
+	text-align:center;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: gray;
+}
+.about
+{
+	width:2300px;
+	height:1800px;
+	background-image:url(124.jpg);
+	background-repeat:no-repeat;
+	background-size: contain;
+	opacity:0.9;
+	position:absolute;
+	top:2800px;
+	left:250px;
+}
+
+.contact
+{
+	width:2300px;
+	height:1800px; 
+	background-image:url(124.jpg);
+	background-repeat:no-repeat;
+	background-size: contain;
+	opacity:0.9;
+	position:absolute;
+	top:2800px;
+	left:2800px;
+}
+

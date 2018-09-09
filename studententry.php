@@ -1,0 +1,40 @@
+<?php
+$a=$_POST['Fac_name'];
+$b=$_POST['Fac_ID'];
+$c=$_POST['Dept_code'];
+$d=$_POST['Email_ID'];
+$e=$_POST['Phone_no'];
+$f=$_POST['Username'];
+$g=$_POST['Password'];
+$con=mysql_connect('localhost','root','');
+mysql_select_db("dbms",$con);
+$q="select * from studentdetails";
+$r="select * from facultydetails";
+$result1=mysql_query($q,$con);
+$result2=mysql_query($r,$con);
+$l1=mysql_num_rows($result1);
+$l2=mysql_num_rows($result2);
+$istrue=0;
+for($i=1;$i<=$l1;$i++)
+{
+	$row1=mysql_fetch_array($result1);
+	if($row1['Username']==$a&&$row1['Password']==$b)
+	{
+		$istrue=1;
+	}	
+}
+for($j=1;$j<=$l2;$j++)
+{
+	$row2=mysql_fetch_array($result2);
+	if($row2['Username']==$a&&$row2['Password']==$b)
+	{
+		$istrue=1;
+	}	
+}
+if($istrue==1)
+include("profile.php");
+else
+{
+include("loginfail.php");
+}
+?>

@@ -1,0 +1,41 @@
+body{
+	background-image:url(img/34.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment: fixed;
+}
+
+.queries{
+	width:2200px;
+	height:1700px;
+	background-color:lightgrey;
+	border-radius:50px;
+	opacity:0.6;
+	position:absolute;
+	top:600px;
+	left:2600px;
+	overflow-y: scroll;
+
+}
+.askqueries{
+	width:2000px;
+	height:800px;
+	background-color:lightgrey;
+	border-radius:50px;
+	opacity:0.6;
+	position:absolute;
+	top:600px;
+	left:250px;
+
+}
+.books{
+	width:2000px;
+	height:800px;
+	background-color:lightgrey;
+	border-radius:50px;
+	opacity:0.6;
+	position:absolute;
+	top:1500px;
+	left:250px;
+
+}
